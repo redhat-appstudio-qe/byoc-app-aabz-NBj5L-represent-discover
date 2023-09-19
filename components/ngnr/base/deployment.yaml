@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ngnr
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-nfqq-tenant/byoc-app-aabz/ngnr@sha256:2941531d9a6f7cc3e843667b1046313116336d1043ca3125b8c1f3fbc9942012
         name: my-java-quarkus
         ports:
         - containerPort: 8081
