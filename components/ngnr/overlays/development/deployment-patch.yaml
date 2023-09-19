@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ngnr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-nfqq-tenant/byoc-app-aabz/ngnr@sha256:2941531d9a6f7cc3e843667b1046313116336d1043ca3125b8c1f3fbc9942012
+        name: my-java-quarkus
+        resources: {}
+status: {}
